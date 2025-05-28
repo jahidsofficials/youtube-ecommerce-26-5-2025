@@ -1,0 +1,25 @@
+/* Google Fonts import  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    position: fixed;
+    width: 100vw;
+    height: 70px;
+    left: 0;
+    top: 0;
+    background: darkblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
