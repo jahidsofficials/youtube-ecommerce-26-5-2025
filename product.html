@@ -15,9 +15,10 @@
 <body>
     <!-- Navigation Start -->
     <nav>
-        <div class="search_product">
-            <input type="search" placeholder="search ">
-        </div>
+         <div class="search_product">
+                <input type="text" placeholder="search ">
+                <i class="bi bi-search"></i>
+            </div>
         <div class="logo">
             <a href="/">ModaMix</a>
         </div>
@@ -28,7 +29,7 @@
         </div>
 
         <!-- Sub Navigation  -->
-        <ul class="suv_nav">
+          <ul class="suv_nav">
             <li class="nav_items"><a href="#">Home</a></li>
             <li class="nav_items"><a href="#">Men's <i class="bi bi-caret-down-fill"></i></a></li>
             <li class="nav_items"><a href="#">Woman <i class="bi bi-caret-down-fill"></i></a></li>
@@ -115,7 +116,31 @@
                         <i class="bi bi-plus-lg"></i>
                     </div>
                     <div class="reviews">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, ea?</p>
+                        <div class="review_input">
+                            <i value="1" class="bi rateByStar bi-star"></i>
+                            <i value="2" class="bi rateByStar bi-star"></i>
+                            <i value="3" class="bi rateByStar bi-star"></i>
+                            <i value="4" class="bi rateByStar bi-star"></i>
+                            <i value="5" class="bi rateByStar bi-star"></i>
+                        </div>
+                        <div class="review_input">
+                            <input type="text" placeholder="comment">
+                            <button>Post</button>
+                        </div>
+                        <div class="review_card">
+                            <div class="review_user">
+                               <i class="bi bi-person-fill"></i>
+                                <h5>Karan Kumar</h5>
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe et voluptates sed totam deleniti molestiae.</p>
+                        </div>
+                        <div class="review_card">
+                            <div class="review_user">
+                               <i class="bi bi-person-fill"></i>
+                                <h5>Karan Kumar</h5>
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe et voluptates sed totam deleniti molestiae.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -231,6 +256,14 @@
 
     <!-- Script  -->
     <script src="assets/js/app.js"></script>
+
+    <script>
+        Array.from(document.getElementsByClassName('pro_des')).forEach((el , i) => {
+            el.getElementsByTagName('i')[0].addEventListener('click' , () => {
+                el.classList.toggle('pro_des_active')
+            })
+        })
+    </script>
 </body>
 
 </html>
