@@ -895,3 +895,25 @@ footer .ft .socialft a:hover {
     padding: 2px 5px;
 }
 /* Result Sec End */
+
+
+/* Cart Start  */
+
+.cart {
+    width: 100%;
+    padding: 20px 15%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cart .cart_item{
+    width: calc(100% - 300px);
+    border: 1px solid #000;
+}
+.cart .cart_payment{
+    border: 1px solid #000;
+    width: 300px;
+    border: 1px solid #000;
+}
+
+/* Cart End  */
