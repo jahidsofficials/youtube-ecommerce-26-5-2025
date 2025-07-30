@@ -957,18 +957,49 @@ footer .ft .socialft a:hover {
     font-size: 13px;
 }
 
-.item-actions a {
-    color: red;
-    text-decoration: none;
+.item-actions i {
+    color: #d6001c;
+    cursor: pointer;
+    transition: .3s linear;
 }
 
-.item-actions a:hover {
-    text-decoration: underline;
+.item-actions i:hover {
+    color: #ff465f;
 }
 
 .item-meta {
     text-align: center;
     font-size: 15px;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.qty-input {
+    width: 15px;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    background-color: transparent;
+}
+
+.qty-btn {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.qty-btn:hover {
+    background-color: #f2f2f2;
 }
 
 .price {

@@ -51,11 +51,16 @@
                 <div class="item-info">
                     <p class="item-title">511™ Slim Fit Jeans - Adv. Stretch</p>
                     <p class="item-subtitle">Riger</p>
-                    <p class="item-actions"><a href="#"><i class="bi bi-trash-fill"></i></a> | <a href="#"><i class="bi bi-suit-heart-fill"></i></a></p>
+                    <p class="item-actions"><i class="bi bi-trash-fill"></i> | <i class="bi bi-suit-heart-fill"></i></p>
                 </div>
                 <div class="item-meta">Dark Blue</div>
                 <div class="item-meta">32</div>
-                <div class="item-meta">1</div>
+                <div class="item-meta quantity-control">
+                    <button class="qty-btn" onclick="decreaseQty(this)">−</button>
+                    <input type="text" value="1" class="qty-input" readonly>
+                    <button class="qty-btn" onclick="increaseQty(this)">+</button>
+                </div>
+
                 <div class="item-meta price">119,90₹</div>
             </div>
 
@@ -64,11 +69,16 @@
                 <div class="item-info">
                     <p class="item-title">Long Sleeve Graphic Tee</p>
                     <p class="item-subtitle">Esther Maleno</p>
-                    <p class="item-actions"><a href="#"><i class="bi bi-trash-fill"></i></a> | <a href="#"><i class="bi bi-suit-heart-fill"></i></a></p>
+                    <p class="item-actions"><i class="bi bi-trash-fill"></i> | <i class="bi bi-suit-heart-fill"></i></p>
                 </div>
                 <div class="item-meta">Grey</div>
                 <div class="item-meta">32</div>
-                <div class="item-meta">1</div>
+                <div class="item-meta quantity-control">
+                    <button class="qty-btn" onclick="decreaseQty(this)">−</button>
+                    <input type="text" value="1" class="qty-input" readonly>
+                    <button class="qty-btn" onclick="increaseQty(this)">+</button>
+                </div>
+
                 <div class="item-meta price">49,90₹</div>
             </div>
 
@@ -77,11 +87,16 @@
                 <div class="item-info">
                     <p class="item-title">Levi™ Western - WellThread™</p>
                     <p class="item-subtitle">Workwear</p>
-                    <p class="item-actions"><a href="#"><i class="bi bi-trash-fill"></i></a> | <a href="#"><i class="bi bi-suit-heart-fill"></i></a></p>
+                    <p class="item-actions"><i class="bi bi-trash-fill"></i> | <i class="bi bi-suit-heart-fill"></i></p>
                 </div>
                 <div class="item-meta">Camo Green</div>
                 <div class="item-meta">32</div>
-                <div class="item-meta">1</div>
+                <div class="item-meta quantity-control">
+                    <button class="qty-btn" onclick="decreaseQty(this)">−</button>
+                    <input type="text" value="1" class="qty-input" readonly>
+                    <button class="qty-btn" onclick="increaseQty(this)">+</button>
+                </div>
+
                 <div class="item-meta price">79,90₹</div>
             </div>
         </div>
@@ -96,6 +111,22 @@
             <button class="checkout-btn">CHECKOUT</button>
         </div>
     </div>
+
+    <!-- Qyt Add Remove  -->
+    <script>
+        function increaseQty(btn) {
+            const input = btn.parentElement.querySelector('.qty-input');
+            input.value = parseInt(input.value) + 1;
+        }
+
+        function decreaseQty(btn) {
+            const input = btn.parentElement.querySelector('.qty-input');
+            if (parseInt(input.value) > 1) {
+                input.value = parseInt(input.value) - 1;
+            }
+        }
+    </script>
+
 
     <!-- Footer Actions -->
     <div class="footer-buttons">
